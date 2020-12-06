@@ -6,6 +6,6 @@ rule PDF_check
    strings:
     $start = "%PDF"
     $end = "%%EOF"
-   condition"
+   condition:
      $start at 0 and $end
 }
